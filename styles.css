@@ -1,4 +1,4 @@
-/* Geral */
+/*/* Geral */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -208,6 +208,48 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+/* Página Outros Artistas */
+.other-artists {
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.other-artists h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.artist-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artist-thumbnail {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    width: 150px; /* Ajuste conforme necessário */
+    text-decoration: none;
+}
+
+.artist-thumbnail img {
+    width: 100px; /* Ajuste o tamanho da bolinha */
+    height: 100px; /* Ajuste o tamanho da bolinha */
+    border-radius: 50%; /* Faz a imagem ficar em forma de bolinha */
+    object-fit: cover;
+}
+
+.artist-thumbnail p {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
 /* Página Eventos */
 .events-list {
     margin: 50px auto;
@@ -234,8 +276,6 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 500px; /* Altura fixa para o item de evento */
-    overflow: hidden; /* Esconde o excesso de conteúdo */
 }
 
 .event-poster {
@@ -244,15 +284,13 @@ nav ul li a:hover {
 }
 
 .event-poster img {
-    max-width: 300px; /* Tamanho máximo da imagem */
+    max-width: 400px;
     height: auto;
     border-radius: 8px;
-    max-height: 200px; /* Altura máxima da imagem */
 }
 
 .event-details {
     margin-top: 20px;
-    flex-grow: 1; /* Permite que o conteúdo se expanda conforme necessário */
 }
 
 .event-details h3 {
@@ -263,9 +301,6 @@ nav ul li a:hover {
 .event-details p {
     color: #b0b0b0;
     margin-bottom: 10px;
-    max-height: 100px; /* Altura máxima do texto */
-    overflow: hidden; /* Esconde o excesso de texto */
-    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
 }
 
 .event-details .cta-button {
@@ -326,7 +361,7 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-    background-color: #8e44ad; /* Alterado para um roxo mais escuro */
+   background-color: #8e44ad; /* Alterado para um roxo mais escuro */
 }
 
 /* Página Contato */
